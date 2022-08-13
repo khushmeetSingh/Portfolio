@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .radiodiv{
+      background-color: rgb(140, 243, 5);
+      height: 50px;width:50px;
+    }
+  </style>
+<body>
+
+
+  <div class="radiodiv" onclick=selected(this)>one</div>
+  <div class="radiodiv" onclick=selected(this)>two</div>
+  <div class="radiodiv" onclick=selected(this)>three</div>
+  <div class="radiodiv" onclick=selected(this)>four</div>
+  <div class="radiodiv" onclick=selected(this)>five</div>
+  <div class="radiodiv" onclick=selected(this)>six</div>
+  <div class="radiodiv" onclick=selected(this)>seven</div>
+  
+  <script>
+  var divItems = document.getElementsByClassName("radiodiv");
+  
+  function selected(item) {
+      this.clear();
+      item.style.backgroundColor = 'red';
+  }
+
+  function clear() {
+    for(var i=0; i < divItems.length; i++) {
+        var item = divItems[i];
+        item.style.backgroundColor = 'white';
+    }
+  }
+    
+  </script>
+  
+  
+</body>
+</html>

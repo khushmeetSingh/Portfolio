@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushmeet Singh</title>
+</head>
+
+<body>
+    <div class="name-animation">
+
+        <section id="name-one" onclick=rotator()>
+            <!-- https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm -->
+            <div id="videoDiv">
+                <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" autoplay loop muted id="video"></video>
+            <!-- <video width="560" height="315" src="https://www.youtube.com/embed/xAwB9lQnxAY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video> -->
+            </div>
+            <!-- <div id="content-on-video-div"> -->
+                <div class="homepage-pic-div">
+                    <img src="photos/homepage-pic.png" class="homepage-pic" alt="photo">
+                </div>
+                <div id="div-on-video">
+                    <div class="name-div">
+                        <p id="name">
+                            <span id="I-am">I am</span>
+                            KHUSHMEET SINGH
+                            <span class="animated-spans">
+                                -A passionate Learner
+                            </span>
+                            <span class="animated-spans">
+                                -A programming tyro
+                            </span>
+                            <span class="animated-spans">
+                                -A tech enthusiast
+                            </span>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div id="social-media-links">
+                    <p id="soc-line">Know me better on:</p>
+                    <div class="social-icons">
+                        <a class=" 	fa fa-google-plus link-to-social-media google " href="mailto:skhushmeet7@gmail.com"></a>
+                    </div>
+                    <div class="social-icons">
+                        <div class="gradient-for-insta" >
+                            <a class="fa fa-instagram link-to-social-media insta" href="https://www.instagram.com/skhushmeet7/"></a>
+
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a class="fa fa-twitter link-to-social-media" href="https://mobile.twitter.com/khushmeetrockz"></a>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- <div class="next-btn" >
+            <img src="arrowWhite.png" alt=""class="next-btn-img" onclick=translateDown(this)>
+        </div> -->
+
+    </div>
+
+    <div class="description" id="desc">
+        <h1 id="about-me">Education</h1>
+
+        <div class="card-container" id="card-con">
+            <div id="transition-card">
+                <h1 style="text-align: center;">Institutions</h1>
+                <div  id="cbse1">
+                    <img src="photos/CBSE.png" class="cbse-photo" alt="">
+                </div>
+                <div  id="cbse2">
+                    <img src="photos/CBSE.png" class="cbse-photo" alt="">
+                </div>
+                <div  id="sgtb">
+                    <img src="photos/SGTBKC.jpg" class="sgtb-photo" alt="">
+                </div>
+            </div>
+            <div id="information">
+                <h1 style="text-align: center;">Standards</h1>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,1) onmouseout=unHighlight(this,1) >
+                    <p class="text-in-education"><span id="span-for-tenth">10th standard</span> (matricultion)[CBSE] : 84%</p>
+                </div>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,2)  onmouseout=unHighlight(this,2)>
+                    <p class="text-in-education"><span id="span-for-tenth">12th standard</span> (Secondary)[CBSE] : 94.2%</p>
+                </div>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,3)  onmouseout=unHighlight(this,3)>
+                    <p class="text-in-education"><span id="span-for-tenth">B.Sc.(H) Computer Science</span> (Undergraduate)[SGTB Khalsa clg,DU]</p>
+                </div>
+                
+            </div>
+            <div id="information2">
+                <h1 style="text-align: center;">Standards</h1>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,1) onmouseout=unHighlight(this,1) >
+                    <p class="text-in-education"><span id="span-for-tenth">10th standard</span> (matricultion)[CBSE] : 84%</p>
+                </div>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,2)  onmouseout=unHighlight(this,2)>
+                    <p class="text-in-education"><span id="span-for-tenth">12th standard</span> (Secondary)[CBSE] : 94.2%</p>
+                </div>
+                <div class="div-in-education" onmouseover=highlightMyParent(this,3)  onmouseout=unHighlight(this,3)>
+                    <p class="text-in-education"><span id="span-for-tenth">B.Sc.(H) Computer Science</span> (Undergraduate)[SGTB Khalsa clg,DU]</p>
+                </div>
+                
+            </div>
+            <div id="scroll-line"></div>
+        </div>
+
+    </div>
+
+    <h1 id="skills-headline">Skills</h1>
+    <div id="skills">
+        <div id="firstS">
+            <div id="firstFront">
+                <img src="photos/kotlin.png" alt="" class="img-in-skills" id="first-skill">
+                <div id="info-firstS" class="text-in-div">
+
+                    More info
+                    <img src="arrows.png" alt="" id="arrow1" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+            <div id="firstBack">
+                <h2 class="skill-level" style="text-align: center;">Skill Level</h2>
+                <div class="skill-level-div" >
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                </div>
+                <p class="info-back-page">
+                    Modern, concise and safe programming language
+
+                    Easy to pick up, so you can create powerful applications immediately. 
+                </p>
+                <div id="back-firstS" class="text-in-div">
+                    <img src="arrows.png" alt="" id="arrow2" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="secondS">
+            <div id="secondFront">
+                <img src="photos/ps.png" alt="" class="img-in-skills" id="first-skill">
+                <div id="info-secondS" class="text-in-div">
+                    More info
+                    <img src="arrows.png" alt="" id="arrow3" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+            <div id="secondBack">
+                <h2 class="skill-level" style="text-align: center;">Skill Level</h2>
+                <div class="skill-level-div">
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                </div>
+                <p class="info-back-page">
+                    
+                Transform photos into flights of pure imagination.
+
+                With one-click selections, easy masking and virtually unlimited layers, you can quickly create what your camera can't capture.
+
+                </p>
+                <div id="back-secondS" class="text-in-div">
+                    <img src="arrows.png" alt="" id="arrow4" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="thirdS">
+            <div id="thirdFront">
+                <img src="photos/java.png" alt="" class="img-in-skills" id="first-skill">
+                <div id="info-thirdS" class="text-in-div">
+
+                    More info
+                    <img src="arrows.png" alt="" id="arrow5" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+            <div id="thirdBack">
+                <h2 class="skill-level" style="text-align: center;">Skill Level</h2>
+                <div class="skill-level-div">
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                </div>
+
+                <p class="info-back-page">
+                    Java is the most popular, widely used object-oriented programming language. The security feature of Java makes it popular and widely used.
+                </p>
+                <div id="back-thirdS" class="text-in-div">
+                    <img src="arrows.png" alt="" id="arrow6" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="fourthS">
+            <div id="fourthFront">
+                <img src="photos/c++.png" alt="" class="img-in-skills" id="first-skill">
+                <div id="info-fourthS" class="text-in-div">
+
+                    More info
+                    <img src="arrows.png" alt="" id="arrow7" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+            <div id="fourthBack">
+                <h2 class="skill-level" style="text-align: center;">Skill Level</h2>
+                <div class="skill-level-div">
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                    <div class="skill-circle"></div>
+                </div>
+                <p class="info-back-page">
+                    C++ can be found just about everywhere you look. It powers search engines, VR applications, air travel, movie production, and even exploration on Mars!
+                </p>
+                <div id="back-fourthS" class="text-in-div">
+                    <img src="arrows.png" alt="" id="arrow8" class="arrows" onclick=arrower(this)+flipback(this)>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <h1 id="projects-heading">Projects Made:</h1>
+    <div>
+        <h2 id="restaurant-heading"> Restaurant management Software</h2>
+        <div id="project-restaurant">
+            <div class="project-image">
+                <img src="photos/order.jpeg" alt="" class="images">
+            </div>
+            <div class="project-image">
+                <img src="photos/bill.jpeg" alt="" class="images">
+            </div>
+            <div class="project-image">
+                <img src="photos/employee.jpeg" alt="" class="images">
+            </div>
+            <div class="project-image">
+                <img src="photos/login.jpeg" alt="" class="images">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h1 class="education-headline">Contact Me (via message)</h1>
+    
+    <div class="contact-me-form-div">
+        <p class="field-name">Name:</p>
+        <input type="text" placeholder="Your name"  class="input-for-contact">
+        <br><br>
+        <p class="field-name">Query/Feedback:</p>
+        <input type="text" class="input-for-contact" >
+        <br><br>
+        <p class="field-name">Email:</p>
+        <input type="text" placeholder="Your Email"class="input-for-contact" >
+        <br><br>
+        <br><br>
+        <button id="submit-btn-contact">Submit</button>
+        <!-- <label for="submit" >Submit</label> -->
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p id="contact-me-footer-headline">Contact Me:</p>
+            <p class="information-in-contact-me"><span class="field-name-contact-me">Email-</span><a href="mailto:skhushmeet7@gmail.com" class="contact-hyperlink"> skhushmeet7@gmail.com</a></p>
+            <p class="information-in-contact-me"><span class="field-name-contact-me">Mobile-</span><a href="tel:8178734789" class="contact-hyperlink">Click here to call</a></p>
+            <p style="text-align: right;">&copy Khushmeet singh</p>
+        </div>
+    </footer>
+
+    <script>
+
+        var skills=document.getElementsByClassName("skill-level-div");
+        skillFill(skills[0],2);
+        skillFill(skills[1],3);
+        skillFill(skills[2],3);
+        skillFill(skills[3],4);
+
+
+
+
+        function flipback(item) {
+            var parent = item.parentNode.parentNode.parentNode;
+            parent.style.transform += "rotateY(180deg)";
+
+        }
+        function arrower(item) {
+            item.style.transform += "translateX(50px)";
+            var arrowsList = document.getElementsByClassName("arrows");
+            console.log(arrowsList.length);
+            for (var i = 0; i < arrowsList.length; i++) {
+                if (arrowsList[i].style.transform != "translateX(0px)" && arrowsList[i].id != item.id) {
+                    arrowsList[i].style.transform = "translateX(0px)";
+                }
+            }
+        }
+
+        function highlightMyParent(item,parentNoNo)
+        {
+            item.style.backgroundColor="aqua";
+            var parent=item.parentNode;
+            var transitionCard=parent.parentNode.children;
+            console.log(transitionCard[0].class,transitionCard[0].id)
+            var children=transitionCard[0].children;
+            children[parentNoNo].style.display="flex";
+            // console.log(children[1].id)
+
+        }
+        function unHighlight(item,parentNoNo)
+        {
+            item.style.backgroundColor="rgb(252, 223, 180)";
+            var parent=item.parentNode;
+            var transitionCard=parent.parentNode.children;
+            console.log(transitionCard[0].class,transitionCard[0].id)
+            var children=transitionCard[0].children;
+            children[parentNoNo].style.display="none";
+            console.log(children)
+        }
+
+        function skillFill(item,level)
+        {
+            console.log("hello");
+            console.log(item.class);
+            var childDivs=item.children;
+            var i;
+            for( i=0;i<level;i++)
+            {
+                childDivs[i].style.backgroundColor="#000";
+            }
+            for(;i<childDivs.length;i++)
+            {
+                childDivs[i].style.border="2px solid #000"
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
