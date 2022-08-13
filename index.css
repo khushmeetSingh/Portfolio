@@ -765,13 +765,21 @@ body{
 
 @media(max-width:500px)
 {
+    .homepage-pic
+    {
+        height: 40vh;
+    }
     .homepage-pic-div{
         /* display: n   one; */
-        scale: 0.5;
-        margin-top: 30vh;
-        margin-left:0;
-        padding-left: 0;
-        right: 50vw;
+        /* height: 20vh;
+        overflow: hidden; */
+        padding-right: 30vw;
+        padding-top: 30vh;
+        left:0vw;
+        top:30vh;
+        /* justify-content:left; */
+        /* background-color: #3500D3; */
+        width: 100vw;
         z-index: 10000;
     }
     #videoDiv{
