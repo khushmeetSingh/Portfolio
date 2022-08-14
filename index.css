@@ -66,8 +66,17 @@ section{
 }
 #video{
     width: 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+    /* top:50vh; */
+    right: 0vw;
+    top: 22vh;
+
+
 }
 section #videoDiv{
+    transform-style: preserve-3d;
+    
     position:relative;
     text-align: center;
     flex-direction: column;
@@ -126,10 +135,11 @@ section #videoDiv{
     width: 100vw;
     background-color: rgb(0, 0, 0); */
     mix-blend-mode: multiply; 
+    transform-style: preserve-3d;
 
 
 
-    display: none;  
+    display: flex;  
     justify-content: center;
     line-height: 1em;
     position: absolute;
@@ -566,7 +576,7 @@ body{
     height: 60vh;
     width: var(--generic-width);
     color: honeydew;
-    transition: all 0.3s ease-in 0.4s;
+    transition: all 0.2s linear 0.4s;
     transform-style: preserve-3d;
     display: flex;
 }
@@ -666,7 +676,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
     width: 50px;
-    transition: all 0.3s ease-in;
+    transition: all 0.15s ease-in;
 }
 
 #projects-heading{
@@ -796,11 +806,16 @@ body{
     .homepage-pic
     {right: 90%;
     }
-    #div-on-video,#video
+    #div-on-video
     {
         font-size: 10vw;
+        height: 100vh;
         /* padding-bottom: 30vh; */
-        bottom: 150vh;
+        /* bottom: 150vh; */
+    }
+    #video{
+        right: 0vw;
+        top: 0vh;
     }
 
     #name
