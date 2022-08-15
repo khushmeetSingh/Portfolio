@@ -8,21 +8,15 @@
 
 body{
     background-color: #192734;
-    /* background-color: #bad7df; */
-    /* background-color: ; */
-    /* color: ; */
 }
 :root{
     --generic-width:300px;
 }
 
 .name-animation{
-    /* overflow: hidden; */
     display: flex;
     height:100vh ;
     width: 100%;
-    background-color: rgb(58, 27, 27);
-    /* cursor:pointer; */
     justify-content: end;
     align-items: flex-end;
 }
@@ -37,7 +31,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* mix-blend-mode: multiply; */
     bottom: 5vh;
     transform:translateX()
     
@@ -53,7 +46,6 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in ;
-    /* z-index: 200; */
 }
 section{
     position: absolute;
@@ -61,15 +53,11 @@ section{
     height: 100vh;
     display: flex;
     justify-content: center;
-    
-    /* overflow: hidden; */
-    /* background-color: lawngreen; */
 }
 #video{
     width: 100%;
     transform-style: preserve-3d;
     position: absolute;
-    /* top:50vh; */
     right: 0vw;
     top: 22vh;
 
@@ -82,59 +70,39 @@ section #videoDiv{
     text-align: center;
     flex-direction: column;
     align-items: center;
-    /* vertical-align: middle; */
-    /* top:35vh; */
     height:100vh;
     width: 100vw;
     border: 0px;
     padding: 0px;
     margin: 0px;
-    /* display: table-cell; */
     justify-content: center;
     z-index: 0;
     overflow-y: hidden;
-    /* overflow: hidden; */
 }
 
 .homepage-pic
 {
     z-index: 100;
-    /* background-color: rgb(31, 90, 84); */
-    /* hright */
     height: 90vh;
 }
 
 .homepage-pic-div
 {
-    /* mix-blend-mode:color; */
     z-index: 10000;
-    /* scale: ; */
     color: thistle;
     position: absolute;
-    /* background-color: rgb(0, 255, 200); */
     padding-bottom: 0;
     height: auto;
     width: auto;
     margin:0;
     top: 3vh;
-    /* bottom: 2vh; */
-    right: 85vw;
-    /* left: 80vw; */
+    right: 87vw;
     justify-content: left;
 
     display: inline-block;
-    /* flex-wrap: wrap; */
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
 }
 
 .name-div{
-    /* display: inline-block;
-    /* z-index: 0; 
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0); */
     mix-blend-mode: multiply; 
     transform-style: preserve-3d;
 
@@ -147,18 +115,14 @@ section #videoDiv{
     top:0;
     width: 100%;
     height: 100vh;
-    /* background-color: transparent; */
 }
 
 #name
 {
-    /* mix-blend-mode: multiply; */
     font-family: GreyQo , cursive;
 
     position: absolute;
     top: 0;
-    /* left: -40px; */
-    /* right: 50px; */
     height: 100vh;
     width: 100%;
     font-weight: 1000;
@@ -167,25 +131,18 @@ section #videoDiv{
     flex-direction: column;
     font-size:8vw;
     justify-content: center;
-    /* stroke-width: 1px; */
-    /* align-items: center; */
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     color: #fff;/*FFF*/
-    /* mix-blend-mode:multiply; */
     line-height: 0.85em;
-    /* z-index: 0 !important; */
-    /* border: 5px solid white; */
 }
 
 #I-am
 {
-    /* font-family: serif; */
     font-size: 5vw;
     padding-left: 15vw;
     text-align: left;
     color:rgb(255, 255, 255);
-    /* align-items: flex-start; */
     display: block;
 }
 
@@ -194,29 +151,10 @@ section #videoDiv{
     100%{opacity:0}
 }
 
-/* #animated-span::after{
-    content: "hello world";
-} */
-/* ------------------------------- */
 
 
 
 
-/* Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-/* Global */
-/* html{
-    min-height: 100%;
-  overflow: hidden;
-}
-body{
-    height: calc(100vh - 8em);
-    padding: 4em;
-    color: rgba(255,255,255,.75);
-    font-family: 'Anonymous Pro', monospace;  
-    background-color: rgb(25,25,25);  
-} */
 .animated-spans
 {    
     padding:0 0 0 30vw;
@@ -227,8 +165,6 @@ body{
     font: sans-serif;
     text-align: left;
     line-height: 1em;
-    /* background-color: violet; */
-    /* animation: blink 0.8s ease-in-out infinite; */
     color: rgb(255, 255, 255);
 }
 
@@ -237,7 +173,6 @@ body{
     display: block;
     color: rgb(10, 255, 173);
     font-size: 2vw;
-    /* mix-blend-mode: multiply; */
 }
 
 #social-media-links
@@ -268,17 +203,35 @@ body{
     transition:all 0.15s ease-in;
     cursor: pointer;
 }
+
+#resume-buttons-div{
+    background-color: #03a9f4;
+    z-index: 10600;
+    position: relative;
+    right: 40vw;
+    bottom: 10vh;
+    width:20vw;
+}
+.resume-buttons{
+height: 4vh;
+width: 6vw;
+border-radius: 2vw;
+background-color: #42edf6;
+font-size: 2vh;
+
+}
+.resume-buttons:hover
+{
+    background-color: #00bad3;    
+}
+    
+.resume-a{
+    text-decoration: none;
+}
 .google:hover
 {
     color: rgb(255, 38, 0);
 }
-/* .gradient-for-insta
-{
-    height: 100;
-    width:100%;
-    display: none;
-    background-image: linear-gradient();
-} */
 
 .insta:hover{
     background-image: linear-gradient(rgb(247, 4, 48),rgb(128, 1, 247));
@@ -301,7 +254,6 @@ body{
     display: inid="animated-span"line;   
 }
 
-/* Animation */
 .anim-typewriter{
   animation: typewriter 2s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
@@ -316,7 +268,6 @@ body{
 }
 
 
-/* ------------------------------- */
 
 
 
@@ -335,8 +286,6 @@ body{
     width: 100vw;
     height: 100vh;
     
-    /* background-color: transparent; */
-    /* background-color: aqua; */
 
     align-items:center;
     overflow-y: hidden;
@@ -346,35 +295,24 @@ body{
 }
 
 .description{
-    /* background-color: azure; */
     height: 100vh;
     width: 100%;
 }
 #about-me
 {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
-    /* background-color: #192734; */
     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
 
 }
 
-/* .card-container
-{
-    background-color: grey;
-    mix-blend-mode:multiply;
-} */
 
 .card-container{
-    /* display: block; */
     height: 80vh;
     width: 100%;
-    /* background-color: darkcyan; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -385,33 +323,24 @@ body{
 {
     background-image:url(./photos/mountains-bg.jpg);
     background-size: 400px;
-    /* background-color: rgb(161, 209, 110);
-    border: 15px solid #C74B50; */
     height: 80vh;
     width: 400px;
     border-radius: 10px;
     
     position: absolute;
     display: block;
-    /* align-items: center; */
-    /* justify-content: center; */
     
-    /* left: 34vmax;34 */
     transition:all 0.5s ease-in;
 }
 #information2
 {
     background-image: linear-gradient(to right,rgb(5, 252, 211),rgb(4, 0, 255));
-    /* background-color: beige; */
     height: 80vh;
     width: 400px;
     
     position: absolute;
     display: none;
-    /* align-items: center; */
-    /* justify-content: center; */
     
-    /* left: 34vmax;34 */
     transition:all 0.5s ease-in;
 }
 
@@ -425,32 +354,19 @@ body{
     cursor: pointer;
 }
 
-/* .cbse-photo
-{
-    display: none;
-} */
 
 #cbse1,#cbse2,#sgtb{
     max-height: 100%;
     display: none;
     justify-content: center;
-    /* align-items: flex-end; */
     max-height: 60%;
-    /* max-width: 100%; */
     width: 100%;
     margin-top: 5vh;
     overflow: hidden;
 }
-/* .cbse-photo{
-    max-height: 60%;
-    max-width: %;
-    width: 90%;
-
-} */
 
 .skill-level-div
 {
-    /* background-color: black; */
     width: 80%;
     height: 15%;
     margin:0 10%;
@@ -476,7 +392,6 @@ body{
 }
 .field-name
 {
-    /* display: inline; */
     color: blanchedalmond;
     font-size: 2vw;
     line-height: 0.85;
@@ -512,7 +427,6 @@ body{
     height: 6vh;
     width:6vh;
 
-    /* background-color: rgb(0, 0, 0); */
     border-radius: 50%;
 }
 
@@ -529,7 +443,6 @@ body{
 .card-container:hover >#information
 {
     transform: translateX(-20vw);
-    /* transform: rotateY(180deg); */
 }
 .card-container:hover >#transition-card
 {
@@ -538,7 +451,6 @@ body{
 
 #transition-card
 {
-    /* background-image: url("./photos/mountains-bg-2.jpg"); */
     background-color: rgb(0, 0, 0);
     height: 80vh;
     width: 400px;
@@ -563,21 +475,17 @@ body{
 {
     height: auto;
     width: 100vw;
-    /* background-color: azure; */
     display:flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap:  wrap;
-    /* align-items:center; */
 }
 
 #skills-headline
 {
-    /* font-family: GreyQo , cursive; */
     text-align: center;
     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
 }
@@ -597,8 +505,6 @@ body{
     background-color: #3B8BEB;
     background-image: linear-gradient(#3B8BEB,white,white);
     position: absolute;
-    /* background-color:rgb(252, 71, 71); */
-    /* background-image: linear-gradient(#2bbe06,#d8e616  ); */
     height: 60vh;
     width: var(--generic-width);
     display: flex;
@@ -617,7 +523,6 @@ body{
     overflow: hidden;
     z-index: 10;
     
-    /* transition: all 0.5s ease-in; */
 }
 .text-in-div
 {
@@ -632,15 +537,10 @@ body{
     top: 90%;
     background-color: rgb(81, 253, 1);
     overflow: hidden;
-    /* transition: all 0.5s ease-in ; */
 }
 
-/* #firstS:hover{
-    transform: rotateY(180deg);
-} */
 
 #firstBack,#secondBack,#thirdBack,#fourthBack{
-    /* margin-top:5vh; */
     position: absolute;
     height: 60vh;
     width: var(--generic-width);
@@ -648,39 +548,12 @@ body{
     backface-visibility: hidden;
     transform: rotateY(180deg);
 
-    /* display:list-item;
-    justify-content: center;
-    align-items: flex-start; */
 
 }
 
-/* #firstS:hover{
-    transform: translateY(-10px);
-    background-image: linear-gradient(blue,purple);
-    backface-visibility: hidden;
-} */
 
 
 
-/* #secondS
-{
-    height: 80vh;
-    width: 25vw;
-    background-color: rgb(56, 104, 209);
-    
-} */
-/* #thirdS
-{
-    height: 80vh;
-    width: 25vw;
-    background-color: rgb(196, 255, 252);
-}
-#fourthS
-{
-    height: 80vh;
-    width: 25vw;
-    background-color: rgb(255, 196, 209);
-} */
 .arrows
 {
     scale:1.2;
@@ -695,7 +568,6 @@ body{
     text-align: center; 
     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
     
@@ -742,7 +614,6 @@ body{
 #contact-me-footer-headline{
      background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
 }
@@ -762,10 +633,8 @@ body{
 
 .education-headline
 {
-    /* font-family: GreyQo , cursive; */
     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
     text-align: center;
@@ -784,7 +653,6 @@ body{
 }
 .img-in-skills{
     position: absolute;
-    /* height: ; */
     width: 100%;
 }
 
@@ -805,7 +673,6 @@ body{
 #academic-honesty-heading{
     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
     color:yellow;
-    /* font-family: GreyQo , cursive; */
     font-size: 9vh;
     font-weight: 600;
     text-align: center;
@@ -822,20 +689,14 @@ body{
         height: 40vh;
     }
     .homepage-pic-div{
-        /* display: n   one; */
-        /* height: 20vh;
-        overflow: hidden; */
         padding-right: 30vw;
         padding-top: 30vh;
         left:0vw;
         top:30vh;
-        /* justify-content:left; */
-        /* background-color: #3500D3; */
         width: 100vw;
         z-index: 10000;
     }
     #videoDiv{
-        /* bottom:15vh; */
         top:38vh;
     }
     #div-on-video{
@@ -852,8 +713,6 @@ body{
     {
         font-size: 10vw;
         height: 100vh;
-        /* padding-bottom: 30vh; */
-        /* bottom: 150vh; */
     }
     #video{
         right: 0vw;
@@ -906,8 +765,7 @@ body{
     }
     .social-media-links
     {
-        width: 50vw;
-        /* scale: 1.5; */
+        width: 20px;
     }
     .social-icons
     {

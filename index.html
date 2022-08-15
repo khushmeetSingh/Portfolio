@@ -17,13 +17,10 @@
     <div class="name-animation">
 
         <section id="name-one" onclick=rotator()>
-            <!-- https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm -->
             <div id="videoDiv">
                 <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" autoplay loop muted
                     id="video"></video>
-                <!-- <video width="560" height="315" src="https://www.youtube.com/embed/xAwB9lQnxAY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video> -->
-            </div>
-            <!-- <div id="content-on-video-div"> -->
+                </div>
             <div class="homepage-pic-div">
                 <img src="photos/homepage-pic.png" class="homepage-pic" alt="photo">
             </div>
@@ -60,8 +57,14 @@
                 <div class="social-icons">
                     <a class="fa fa-twitter link-to-social-media" href="https://mobile.twitter.com/khushmeetrockz"></a>
                 </div>
+                <div class="social-icons">
+                    <a href="./resume.pdf" class="resume-buttons-a" download=""><button class="resume-buttons">Resume</button></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#form-for-contact" class="resume-buttons-a"><button class="resume-buttons">Contact me</button></a>
+                </div>
             </div>
-            <!-- </div> -->
+            
         </section>
 
         <!-- <div class="next-btn" >
@@ -356,7 +359,7 @@
             <input type="number" id="hourly-wage" step=".01" style="display:none;" rows="1" cols="200"
                 placeholder="Hourly Wage (in $)">
             <br><br>
-            <textarea id="w3review" name="w3review" rows="7" cols="30"></textarea>
+            <textarea placeholder="Drop your thoughts!" rows="7" cols="30"></textarea>
             <br>
             <input type="range">
             <label for="urgency" style="color:white ;">Urgency</label>
@@ -374,77 +377,8 @@
         </div>
     </footer>
 
-    <script>
+    <script src="index.js"></script>
 
-        var skills = document.getElementsByClassName("skill-level-div");
-        skillFill(skills[0], 2);
-        skillFill(skills[1], 3);
-        skillFill(skills[2], 3);
-        skillFill(skills[3], 4);
-
-
-
-
-        function flipback(item) {
-            var parent = item.parentNode.parentNode.parentNode;
-            parent.style.transform += "rotateY(180deg)";
-
-        }
-        function arrower(item) {
-            item.style.transform += "translateX(50px)";
-            var arrowsList = document.getElementsByClassName("arrows");
-            console.log(arrowsList.length);
-            for (var i = 0; i < arrowsList.length; i++) {
-                if (arrowsList[i].style.transform != "translateX(0px)" && arrowsList[i].id != item.id) {
-                    arrowsList[i].style.transform = "translateX(0px)";
-                }
-            }
-        }
-
-        function highlightMyParent(item, parentNoNo) {
-            item.style.backgroundColor = "aqua";
-            var parent = item.parentNode;
-            var transitionCard = parent.parentNode.children;
-            console.log(transitionCard[0].class, transitionCard[0].id)
-            var children = transitionCard[0].children;
-            children[parentNoNo].style.display = "flex";
-            // console.log(children[1].id)
-
-        }
-        function unHighlight(item, parentNoNo) {
-            item.style.backgroundColor = "rgba(0, 255, 106, 0.062)";
-            var parent = item.parentNode;
-            var transitionCard = parent.parentNode.children;
-            console.log(transitionCard[0].class, transitionCard[0].id)
-            var children = transitionCard[0].children;
-            children[parentNoNo].style.display = "none";
-            console.log(children)
-        }
-
-        function skillFill(item, level) {
-            console.log("hello");
-            console.log(item.class);
-            var childDivs = item.children;
-            var i;
-            for (i = 0; i < level; i++) {
-                childDivs[i].style.backgroundColor = "#000";
-            }
-            for (; i < childDivs.length; i++) {
-                childDivs[i].style.border = "2px solid #000"
-            }
-        }
-        function hourlyWage() {
-            var textBox = document.getElementById("hourly-wage");
-
-            var hiringRadioBtn = document.getElementById("radio-hiring");
-            if (hiringRadioBtn.checked) {
-                textBox.style.display = "unset";
-            }
-            else
-                textBox.style.display = "none";
-        }
-
-    </script>
 </body>
 
 </html>
