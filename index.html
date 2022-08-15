@@ -280,52 +280,92 @@
     <br>
     <br>
 
+    <h1 id="academic-honesty-heading">
+        Academic Honesty and About Me
+    </h1>
+    <div id="about-and-honesty" style="display: block;">
+        <p style="color:white">
+            I declare that my assignment is wholly my own work in accordance
+            with Seneca Academic Policy. No part of this assignment has been
+            copied manually or electronically from any other source (including
+            web sites) except for the information supplied by the WEB222
+            instructors and / or made available in this assignment for my use. I
+            also declare that no part of this assignment has been distributed to
+            other students.
+        </p>
+        <h2 style="color: yellow;">Basic Information</h2>
+        <table style="color: white;margin-left: auto;margin-right: auto;">
+            <tr>
+                <td>Age</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>khushmeet-singh@myseneca.ca</td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>English, Punjabi, Hindi</td>
+            </tr>
+            <tr>
+                <td> Class Section</td>
+                <td>NEE</td>
+            </tr>
+            <tr>
+                <td>Student Id</td>
+                <td>138199211</td>
+            </tr>
+            <tr>
+                <td>Instructor</td>
+                <td>Noman Atique</td>
+            </tr>
+        </table>
+    </div>
     <h1 class="education-headline">Contact Me (via message)</h1>
 
     <div class="contact-me-form-div">
-        <!-- <p class="field-name">Name:</p>
-        <input type="text" placeholder="Your name"  class="input-for-contact">
-        <br><br>
-        <p class="field-name">Query/Feedback:</p>
-        <input type="text" class="input-for-contact" >
-        <br><br>
-        <p class="field-name">Email:</p>
-        <input type="text" placeholder="Your Email"class="input-for-contact" >
-        <br><br>
-        <br><br>
-        <button id="submit-btn-contact">Submit</button>
-        <label for="submit" >Submit</label> -->
-
-        <form action="https://httpbin.org/post" method="POST">
+        <form action="https://httpbin.org/post" method="POST" id="form-for-contact">
             <label for="fname" style="color: white;" class="field-name">Name:</label><br>
-            <input type="text" id="fname" name="fname" value="John" class="input-for-contact"><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your Name" class="input-for-contact"><br>
             <label for="lname" style="color: white;" class="field-name">Email:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe" class="input-for-contact"><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Email" class="input-for-contact"><br>
             <label for="lname" style="color: white;" class="field-name">Address:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe" class="input-for-contact"><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Address" class="input-for-contact"><br>
             <label for="lname" style="color: white;" class="field-name">City:</label><br>
-            <input type="text" list="cities" id="lname" name="lname" value="Doe" class="input-for-contact"><br>
+            <input type="text" list="cities" id="lname" name="lname" placeholder="Enter your City"
+                class="input-for-contact"><br>
             <datalist id="cities">
                 <option value="Toronto">
                 <option value="Brampton">
                 <option value="Kitchener">
                 <option value="Missisauga">
                 <option value="North York">
-              </datalist>
-              <label for="lname" style="color: white;" class="field-name">Postal Code:</label><br>
-              <input type="text" id="lname" name="lname" value="Doe" class="input-for-contact" pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d"><br>
+            </datalist>
+            <label for="lname" style="color: white;" class="field-name">Postal Code:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="For Eg : A1B 2C3" class="input-for-contact"
+                pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d"><br>
 
-
-              <input type="radio" id="radio-question" >Question
-              <input type="radio" id="radio-comment">Comment
-              <input type="radio" id="radio-hiring">Hiring
-
+            <p id="query-type">Query Type:</p>
+            <input type="radio" id="radio-question" onclick=hourlyWage() name="choice">
+            <label for="radio" class="label-for-radio">Question </label> <br>
+            <input type="radio" id="radio-comment" onclick=hourlyWage() name="choice">
+            <label for="radio" class="label-for-radio">Comment </label> <br>
+            <input type="radio" id="radio-hiring" onclick=hourlyWage() name="choice">
+            <label for="radio" class="label-for-radio">Hiring </label> <br>
+            <br>
+            <input type="number" id="hourly-wage" step=".01" style="display:none;" rows="1" cols="200"
+                placeholder="Hourly Wage (in $)">
+            <br><br>
+            <textarea id="w3review" name="w3review" rows="7" cols="30"></textarea>
+            <br>
+            <input type="range">
+            <label for="urgency" style="color:white ;">Urgency</label>
             <br><input type="submit" value="Submit" id="submit-btn-contact">
         </form>
     </div>
     <footer>
         <div id="footer">
-            <p id="contact-me-footer-headline">Contact Me:</p>
+            <!-- <p id="contact-me-footer-headline">Contact Me:</p> -->
             <p class="information-in-contact-me"><span class="field-name-contact-me">Email-</span><a
                     href="mailto:skhushmeet7@gmail.com" class="contact-hyperlink"> skhushmeet7@gmail.com</a></p>
             <p class="information-in-contact-me"><span class="field-name-contact-me">Mobile-</span><a
@@ -372,7 +412,7 @@
 
         }
         function unHighlight(item, parentNoNo) {
-            item.style.backgroundColor = "rgb(252, 223, 180)";
+            item.style.backgroundColor = "rgba(0, 255, 106, 0.062)";
             var parent = item.parentNode;
             var transitionCard = parent.parentNode.children;
             console.log(transitionCard[0].class, transitionCard[0].id)
@@ -393,7 +433,16 @@
                 childDivs[i].style.border = "2px solid #000"
             }
         }
+        function hourlyWage() {
+            var textBox = document.getElementById("hourly-wage");
 
+            var hiringRadioBtn = document.getElementById("radio-hiring");
+            if (hiringRadioBtn.checked) {
+                textBox.style.display = "unset";
+            }
+            else
+                textBox.style.display = "none";
+        }
 
     </script>
 </body>

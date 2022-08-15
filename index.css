@@ -8,6 +8,7 @@
 
 body{
     background-color: #192734;
+    /* background-color: #bad7df; */
     /* background-color: ; */
     /* color: ; */
 }
@@ -353,12 +354,13 @@ body{
 {
     /* position: absolute; */
     display: flex;
-    color: rgb(0, 0, 0);
     justify-content: center;
-    background-color: aqua;/*61892F*/
-    font-family: GreyQo , cursive;
-    font-size: 10vh;
-    font-weight: 1000;
+    /* background-color: #192734; */
+    background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
 
 }
 
@@ -381,10 +383,13 @@ body{
 
 #information
 {
-    background-image: linear-gradient(to right,rgb(5, 252, 211),rgb(4, 0, 255));
-    /* background-color: beige; */
+    background-image:url(./photos/mountains-bg.jpg);
+    background-size: 400px;
+    /* background-color: rgb(161, 209, 110);
+    border: 15px solid #C74B50; */
     height: 80vh;
     width: 400px;
+    border-radius: 10px;
     
     position: absolute;
     display: block;
@@ -414,7 +419,8 @@ body{
 {
     display: block;
     width: auto;
-    background-color:rgb(252, 223, 180);/* #0099ff*/
+    background-color:rgba(0, 255, 106, 0.062);/* #0099ff*/
+    opacity: 20;
     margin: 0 1vw;
     cursor: pointer;
 }
@@ -455,8 +461,12 @@ body{
 }
 
 .contact-me-form-div{
-    display: grid;
+    display: block;
     justify-content: center;
+}
+#form-for-contact
+{
+    text-align: center;
 }
 
 .info-back-page
@@ -528,11 +538,13 @@ body{
 
 #transition-card
 {
-    background-image: linear-gradient(to right,purple,blue);
-    background-color: chartreuse;
+    /* background-image: url("./photos/mountains-bg-2.jpg"); */
+    background-color: rgb(0, 0, 0);
     height: 80vh;
     width: 400px;
     overflow:hidden ;
+    border-radius: 15px;
+    color: aliceblue;
 
     position: absolute;
     justify-content: center;
@@ -561,13 +573,13 @@ body{
 
 #skills-headline
 {
-    font-family: GreyQo , cursive;
-    font-size: 10vh;
+    /* font-family: GreyQo , cursive; */
     text-align: center;
-    font-weight: 1000;
-    color:rgb(12, 11, 11);
-
-    background-color: aqua;
+    background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
 }
 
 #firstS,#secondS,#thirdS,#fourthS
@@ -680,13 +692,12 @@ body{
 }
 
 #projects-heading{
-
-    font-family: GreyQo , cursive;
-    font-size: 10vh;
-    text-align: center;
-    font-weight: 1000;
-
-    background-color: aqua;
+    text-align: center; 
+    background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
     
 }
 
@@ -729,8 +740,11 @@ body{
 }
 
 #contact-me-footer-headline{
-    color: white;
-    font-size: 1.8vw;
+     background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
 }
 
 .contact-hyperlink
@@ -748,12 +762,13 @@ body{
 
 .education-headline
 {
-    font-family: GreyQo , cursive;
-    font-size: 10vh;
+    /* font-family: GreyQo , cursive; */
+    background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
     text-align: center;
-    font-weight: 1000;
-
-    background-color: aqua;
 }
 
 #education-div
@@ -773,8 +788,35 @@ body{
     width: 100%;
 }
 
+#radio-question, #radio-comment, #radio-hiring
+{
+    color: #fff;
+    background-color: #fff;
+}
+.label-for-radio{
+    color: #fff;
+}
+
+#query-type{
+    color: white;
+    font-size: 4vh;
+}
+
+#academic-honesty-heading{
+    background-image: linear-gradient(to bottom,rgb(59, 59, 93),#192734);
+    color:yellow;
+    /* font-family: GreyQo , cursive; */
+    font-size: 9vh;
+    font-weight: 600;
+    text-align: center;
+}
+
 @media(max-width:500px)
 {
+    #form-for-contact
+    {
+        text-align: left;
+    }
     .homepage-pic
     {
         height: 40vh;
